@@ -183,7 +183,7 @@ const Courses = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">常規課程</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            我們提供多元化的學術及藝術課程，適合不同年齡層的孩子，讓每個孩子都能找到適合自己的學習方式。<a href="/weather-policy" className="text-blue-600 hover:text-blue-800 text-sm align-super no-underline ml-1">惡劣天氣安排</a>
+            我們提供多元化的學術及藝術課程，適合不同年齡層的孩子，讓每個孩子都能找到適合自己的學習方式。
           </p>
         </div>
 
