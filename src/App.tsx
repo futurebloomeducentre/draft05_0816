@@ -20,8 +20,8 @@ function App() {
               <Header />
               <Hero />
               <About />
-              <GroupCourses />
               <Courses />
+              <GroupCourses />
               <Contact />
               <Footer />
             </>
