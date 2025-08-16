@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling with offset for sticky header */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add scroll margin to sections to account for sticky header */
+section {
+  scroll-margin-top: 120px;
+}
+
+/* Remove underlines from phone and email text */
+.no-underline {
+  text-decoration: none !important;
+}
