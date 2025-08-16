@@ -9,7 +9,7 @@ const WeatherPolicy = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center space-x-4">
             <button 
-              onClick={() => window.history.back()}
+              onClick={() => window.location.href = '/'}
               className="flex items-center space-x-2 text-gray-600 hover:text-orange-600 transition-colors"
             >
               <ArrowLeft size={20} />

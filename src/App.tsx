@@ -14,7 +14,6 @@ function App() {
     <Router>
       <div className="min-h-screen">
         <Routes>
-          <Route path="/weather-policy" element={<WeatherPolicy />} />
           <Route path="/" element={
             <>
               <Header />
@@ -26,6 +25,7 @@ function App() {
               <Footer />
             </>
           } />
+          <Route path="/weather-policy" element={<WeatherPolicy />} />
         </Routes>
       </div>
     </Router>

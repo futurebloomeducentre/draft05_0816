@@ -52,7 +52,7 @@ const Header = () => {
                 <a href="#academic-activities" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">學術活動</a>
               </div>
             </div>
-            <a href="/weather-policy" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">惡劣天氣安排</a>
+            <a href="/weather-policy" className="text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={(e) => { e.preventDefault(); window.location.href = '/weather-policy'; }}>惡劣天氣安排</a>
             <a href="#contact" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">聯絡我們</a>
             <a href="#contact" className="text-white px-6 py-2 rounded-full hover:shadow-lg transition-all" style={{background: '#df5121'}}>
               立即報名
@@ -78,7 +78,7 @@ const Header = () => {
               <a href="#group-courses" className="text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>到校/團體活動</a>
               <a href="#art-activities" className="text-gray-700 hover:text-orange-600 transition-colors font-medium pl-4" onClick={() => setIsMenuOpen(false)}>- 藝術活動</a>
               <a href="#academic-activities" className="text-gray-700 hover:text-orange-600 transition-colors font-medium pl-4" onClick={() => setIsMenuOpen(false)}>- 學術活動</a>
-              <a href="/weather-policy" className="text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>惡劣天氣安排</a>
+              <a href="/weather-policy" className="text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => { setIsMenuOpen(false); window.location.href = '/weather-policy'; }}>惡劣天氣安排</a>
               <a href="#contact" className="text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>聯絡我們</a>
               <a href="#contact" className="text-white px-6 py-2 rounded-full hover:shadow-lg transition-all w-fit" style={{background: '#df5121'}} onClick={() => setIsMenuOpen(false)}>
                 立即報名
