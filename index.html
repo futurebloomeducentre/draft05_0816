@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>桐年卓越教育中心 - FutureBloom Education Centre</title>
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7SV6N400H"></script>
+    <!-- Google tag (gtag.js) - 優化手機端載入 -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-C7SV6N400H');
+      // 延遲載入 Google Analytics 以改善手機端效能
+      window.addEventListener('load', function() {
+        // 創建 gtag 腳本
+        var gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-C7SV6N400H';
+        document.head.appendChild(gtagScript);
+        
+        // 初始化 gtag
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-C7SV6N400H', {
+          // 優化設定
+          send_page_view: true,
+          anonymize_ip: true
+        });
+        
+        // 將 gtag 函數設為全域可用
+        window.gtag = gtag;
+      });
     </script>
     
     <!-- Open Graph meta tags -->
